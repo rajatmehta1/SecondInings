@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: user-profile
+server:
+  port: 9010

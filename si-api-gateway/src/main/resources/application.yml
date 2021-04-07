@@ -1,0 +1,16 @@
+server:
+  port: 9000
+spring:
+  application:
+    name: si-api-gateway
+  cloud:
+    gateway:
+      routes:
+        - id: user-profile
+          uri: http://localhost:9010/
+          predicates:
+            - Path=/api/*/users/**
+        - id: consumerModule
+          uri: http://localhost:8082/
+          predicates:
+            - Path=/consumer/**

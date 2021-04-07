@@ -1,13 +1,13 @@
-package com.si;
+package com.si.gateway;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SecondIningsApplication {
+public class SiApiGatewayApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(SecondIningsApplication.class, args);
+        SpringApplication.run(SiApiGatewayApplication.class, args);
     }
 
 }
