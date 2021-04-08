@@ -7,5 +7,5 @@ spring:
     config:
       server:
         git:
-          uri: file://${user.home}/config-repo
+          uri: https://github.com/rajatmehta1/SecondInings/tree/master/si-config-repo
           search-paths: '{application}'
