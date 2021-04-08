@@ -17,4 +17,9 @@
     <properties>
         <java.version>11</java.version>
     </properties>
+    <modules>
+        <module>si-api-gateway</module>
+        <module>si-config-svr</module>
+        <module>user-profile</module>
+    </modules>
 </project>

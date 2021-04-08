@@ -1,0 +1,11 @@
+server:
+  port: 9001
+spring:
+  application:
+    name: si-config-svr
+  cloud:
+    config:
+      server:
+        git:
+          uri: file://${user.home}/config-repo
+          search-paths: '{application}'
