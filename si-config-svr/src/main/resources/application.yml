@@ -1,5 +1,5 @@
 server:
-  port: 9001
+  port: 9002
 spring:
   application:
     name: si-config-svr
@@ -7,5 +7,12 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/rajatmehta1/SecondInings/tree/master/si-config-repo
+          uri: https://github.com/rajatmehta1/SecondInings
+          skip-ssl-validation: true
+          username: rajat.me@gmail.com
+          password: ilupreet1
           search-paths: '{application}'
+#          default-label: main
+#          timeout: 5
+#          clone-on-start: true
+#          force-pull: true
