@@ -11,7 +11,7 @@ spring:
           skip-ssl-validation: true
           username: rajat.me@gmail.com
           password: ilupreet1
-          search-paths: '{application}'
+          search-paths: '{application}/{profile}'
 #          default-label: main
 #          timeout: 5
 #          clone-on-start: true
