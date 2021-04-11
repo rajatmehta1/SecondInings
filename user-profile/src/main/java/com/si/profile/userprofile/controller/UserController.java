@@ -1,12 +1,15 @@
 package com.si.profile.userprofile.controller;
 
 import com.si.profile.userprofile.domain.User;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping(path = "/api/v1/users",method = RequestMethod.GET)
 public class UserController {
 
+    @Value("${greeting}")
+    private String greeting;
 
     @RequestMapping(path = "/{user_id}",method = RequestMethod.GET)
     public @ResponseBody User fetchUser(@PathVariable(name = "user_id",required = true) Integer user_id)
@@ -27,6 +30,11 @@ public class UserController {
     @RequestMapping(method = RequestMethod.POST)
     public User registerNewUser(User inputUser) {
         return null;
+    }
+
+    @RequestMapping(path = "/check/config",method = RequestMethod.GET)
+    public String loadConfigCheck() {
+        return greeting;
     }
 
 }

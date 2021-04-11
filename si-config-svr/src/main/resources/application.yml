@@ -1,6 +1,10 @@
 server:
   port: 9002
 spring:
+#  security:
+#    user:
+#      name: root
+#      password: root
   application:
     name: si-config-svr
   cloud:
@@ -11,8 +15,4 @@ spring:
           skip-ssl-validation: true
           username: rajat.me@gmail.com
           password: ilupreet1
-          search-paths: '{application}/{profile}'
-#          default-label: main
-#          timeout: 5
-#          clone-on-start: true
-#          force-pull: true
+          search-paths: 'si-config-repo/{profile}'
